@@ -14,4 +14,10 @@ a {
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
+  transition: 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $accentColour;
+  }
 }

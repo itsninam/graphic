@@ -291,20 +291,14 @@ li {
 
 h1 {
   font-family: "Jost", sans-serif;
-  font-size: 4rem;
+  font-size: 4.5rem;
   font-weight: 800;
   letter-spacing: -5px;
   line-height: 120px;
   text-align: center;
-  color: #fff;
   margin-bottom: 20px;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  color: white;
+  text-shadow: 2px 2px 15px #0077b6;
 }
 
 .wrapper {
@@ -323,6 +317,11 @@ a {
   padding: 10px 20px;
   text-decoration: none;
   color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+a:hover, a:focus {
+  color: #0077b6;
 }
 
 header {
