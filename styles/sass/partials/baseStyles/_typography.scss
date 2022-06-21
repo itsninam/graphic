@@ -1,0 +1,45 @@
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 30px;
+  letter-spacing: 2.4px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Jost', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: -5px;
+  line-height: 120px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}

@@ -1,0 +1,18 @@
+.contactPage {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactNav {
+  width: 80%;
+
+  a {
+    font-size: 3rem;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
