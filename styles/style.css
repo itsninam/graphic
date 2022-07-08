@@ -324,11 +324,6 @@ a:hover, a:focus {
   color: #0077b6;
 }
 
-header {
-  background-color: #212529;
-  padding: 20px 0;
-}
-
 ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,6 +334,25 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+header {
+  background-color: #212529;
+  padding: 20px 0;
+  height: 100vh;
+}
+header .subHeading {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
 }
 
 .contactPage {
