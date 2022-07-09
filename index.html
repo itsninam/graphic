@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <!-- header starts here -->
   <header>
     <div class="wrapper">
       <h1>GRAPH!C</h1>
@@ -29,7 +30,7 @@
             <a href="#">Music</a>
           </li>
           <li>
-            <a href="#">Videos</a>
+            <a href="#videoGallery">Videos</a>
           </li>
           <li>
             <a href="#">Connect</a>
@@ -42,8 +43,46 @@
       </div>
     </div>
   </header>
-  <main>
+  <!-- header ends here -->
 
+  <main>
+    <!-- video gallery starts here -->
+    <section id="videoGallery" class="videoGallery">
+      <div class="wrapper">
+        <h2>Videos</h2>
+
+        <div class="slider">
+
+          <div class="slide">
+            <iframe src="https://www.youtube.com/embed/t1_FIigUaKA" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>Runna Runna</h3>
+          </div>
+
+          <div class="slide">
+            <iframe src="https://www.youtube.com/embed/ggwrSXH-vV8" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>Atmosphere</h3>
+          </div>
+
+          <div class="slide">
+            <iframe src="https://www.youtube.com/embed/3sYg3jKuc70" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <h3>The Fixture</h3>
+          </div>
+
+
+        </div>
+        <button class="btn btnNext"> <i class="fa-solid fa-circle-chevron-right"></i> </button>
+        <button class="btn btnPrev">
+          <i class="fa-solid fa-circle-chevron-left"></i> </button>
+
+      </div>
+    </section>
+    <!-- video gallery ends here -->
   </main>
   <footer>
     <div class="wrapper contactPage">
@@ -77,6 +116,9 @@
       </nav>
     </div>
   </footer>
+
+  <!-- link to js -->
+  <script src="app.js"></script>
 </body>
 
 </html>
