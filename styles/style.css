@@ -270,6 +270,7 @@ body {
   font-size: 1rem;
   line-height: 30px;
   letter-spacing: 2.4px;
+  position: relative;
 }
 
 h1,
@@ -300,6 +301,8 @@ h1 {
   margin: 30px 0;
   color: white;
   text-shadow: 2px 2px 15px #0077b6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 h2 {
@@ -327,7 +330,7 @@ a {
   transition: 0.3s;
 }
 a:hover, a:focus {
-  color: #0077b6;
+  color: #000;
 }
 
 ul {
@@ -350,19 +353,27 @@ header {
   background-color: #212529;
   padding: 20px 0;
   height: 100vh;
+  background-image: url("../../../../assets/image1.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: grayscale(85%);
+          filter: grayscale(85%);
 }
-header .subHeading {
-  color: #fff;
+header .navContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 70vh;
+  position: relative;
+  z-index: 10;
 }
 
 .videoGallery {
@@ -439,12 +450,13 @@ h3 {
           align-items: center;
 }
 
-.contactNav {
-  width: 80%;
+.socialsNav {
+  width: 70%;
+  margin: 0 auto;
 }
-.contactNav a {
-  font-size: 3rem;
-  color: #000;
+.socialsNav a {
+  font-size: 1.8rem;
+  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,4 +466,21 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  a {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 450px) {
+  h1 {
+    font-size: 4rem;
+  }
+  a {
+    font-size: 0.7rem;
+  }
 }
