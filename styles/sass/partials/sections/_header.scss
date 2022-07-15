@@ -2,12 +2,19 @@ header {
   background-color: $backgroundColour;
   padding: 20px 0;
   height: 100vh;
+  background-image: url('../../../../assets/image1.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(85%);
 
-  .subHeading {
-    color: #fff;
+  .navContainer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    position: relative;
+    z-index: 10;
   }
+
 }
