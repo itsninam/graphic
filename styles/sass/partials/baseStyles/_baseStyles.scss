@@ -11,15 +11,16 @@ img {
 }
 
 a {
-  padding: 10px 20px;
+  // padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   transition: 0.3s;
+  font-family: $tertiaryFont;
 
   &:hover,
   &:focus {
-    color: #000;
+    color: #023e7d;
   }
 }
 
