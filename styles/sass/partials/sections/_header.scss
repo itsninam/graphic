@@ -1,20 +1,34 @@
 header {
   background-color: $backgroundColour;
-  padding: 20px 0;
   height: 100vh;
-  background-image: url('../../../../assets/image1.jpeg');
+  background-image: url('../../../../assets/grey.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: grayscale(85%);
+  border: 10px solid #0a0908;
+  // filter: grayscale(0.5);
+
+  .banner {
+    background: linear-gradient(to bottom, #0a0908 50%, #212529 100%);
+  }
 
   .navContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 70vh;
     position: relative;
     z-index: 10;
   }
+
+  .headerNav {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+  }
+
+  .socialsNav {
+    margin-top: 60vh;
+  }
+
 
 }
