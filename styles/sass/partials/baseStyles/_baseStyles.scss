@@ -11,12 +11,12 @@ img {
 }
 
 a {
-  // padding: 10px 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
   transition: 0.3s;
-  font-family: $tertiaryFont;
+  font-family: $primaryFont;
+  font-size: 0.8rem;
 
   &:hover,
   &:focus {

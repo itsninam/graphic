@@ -9,19 +9,23 @@
   <!-- Link to google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@800&family=Blinker:wght@700&family=Roboto&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@800&family=Blinker:wght@700&family=Roboto:wght@200&display=swap"
     rel="stylesheet">
   <!-- Link to stylesheet -->
   <link rel="stylesheet" href="./styles/style.css" />
   <!-- Link to fontawesome -->
   <script src="https://kit.fontawesome.com/c6524fac39.js" crossorigin="anonymous"></script>
+  <!-- Link to aos library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
   <!-- header starts here -->
   <header>
     <div class="banner">
-      <h1>GRAPH!C</h1>
+      <h1 data-aos="zoom-in">GRAPH!C</h1>
       <div class="navContainer">
         <nav class="headerNav">
           <ul>
@@ -41,9 +45,12 @@
         </nav>
       </div>
     </div>
-    <div class="wrapper">
+    <div class="wrapper ">
+      <div class="subHeading">
 
-      <nav class="socialsNav">
+        <h2 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">Songwriter | Producer | Graphic Designer</h2>
+      </div>
+      <nav class="socialsNav" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="800">
         <ul>
           <li>
             <a href="https://www.instagram.com/ryanrichardcarr/?hl=en" target="_blank" rel="noopener">
@@ -149,6 +156,11 @@
 
   <!-- link to js -->
   <script src="app.js"></script>
+  <!-- link to aos library -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
