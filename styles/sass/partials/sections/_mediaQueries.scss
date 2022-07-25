@@ -5,7 +5,17 @@
     font-size: 0.8rem;
   }
 
+  header {
+    .headerNav {
+      width: 100%;
+    }
 
+    .subHeading {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
 }
 
 

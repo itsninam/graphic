@@ -309,6 +309,7 @@ h2 {
   color: #fff;
   text-align: center;
   line-height: 50px;
+  text-transform: uppercase;
 }
 
 .wrapper {
@@ -325,7 +326,6 @@ img {
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -354,7 +354,7 @@ section {
 
 header {
   background-color: #212529;
-  height: 90vh;
+  min-height: 90vh;
   background-image: url("../../../../assets/grey.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -386,19 +386,16 @@ header .headerNav {
   padding-bottom: 10px;
 }
 header .subHeading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 25vh;
 }
+header .subHeading h2 {
+  letter-spacing: -1px;
+  font-size: 2.8rem;
+  font-family: "Jost", sans-serif;
+}
 header .socialsNav {
-  margin-top: 25vh;
+  margin-top: 13vh;
+  width: 100%;
 }
 
 .videoGallery {
@@ -526,6 +523,12 @@ h3 {
 @media (max-width: 650px) {
   a {
     font-size: 0.8rem;
+  }
+  header .headerNav {
+    width: 100%;
+  }
+  header .subHeading h2 {
+    font-size: 2rem;
   }
 }
 @media (max-width: 450px) {
