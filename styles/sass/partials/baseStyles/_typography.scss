@@ -31,19 +31,19 @@ li {
 
 h1 {
   font-family: $secondaryFont;
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 800;
   letter-spacing: -5px;
-  line-height: 120px;
   text-align: center;
-  padding: 15px 0;
+  padding: 30px 0 50px 0;
   color: #fff;
   transition: 0.3s;
 }
 
 h2 {
   margin-top: 30px;
-  font-family: $tertiaryFont;
-
-
+  font-family: $primaryFont;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
 }

@@ -293,12 +293,11 @@ li {
 
 h1 {
   font-family: "Jost", sans-serif;
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 800;
   letter-spacing: -5px;
-  line-height: 120px;
   text-align: center;
-  padding: 15px 0;
+  padding: 30px 0 50px 0;
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -306,7 +305,10 @@ h1 {
 
 h2 {
   margin-top: 30px;
-  font-family: "Blinker", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
 }
 
 .wrapper {
@@ -327,7 +329,8 @@ a {
   color: #fff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-family: "Blinker", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
 }
 a:hover, a:focus {
   color: #023e7d;
@@ -351,16 +354,17 @@ section {
 
 header {
   background-color: #212529;
-  height: 100vh;
+  height: 90vh;
   background-image: url("../../../../assets/grey.jpg");
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 10px solid #0a0908;
+  background-attachment: fixed;
 }
 header .banner {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #0a0908), to(#212529));
   background: linear-gradient(to bottom, #0a0908 50%, #212529 100%);
+  border-bottom: 2px solid #fff;
 }
 header .navContainer {
   display: -webkit-box;
@@ -381,8 +385,20 @@ header .headerNav {
   margin: 0 auto;
   padding-bottom: 10px;
 }
+header .subHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 25vh;
+}
 header .socialsNav {
-  margin-top: 60vh;
+  margin-top: 25vh;
 }
 
 .videoGallery {
@@ -473,8 +489,23 @@ h3 {
   width: 70%;
   margin: 0 auto;
 }
+.socialsNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
 .socialsNav a {
-  font-size: 1.8rem;
+  font-size: 1rem;
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,20 +516,19 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+.socialsNav a i {
+  padding-left: 3px;
 }
 
 @media (max-width: 650px) {
-  h1 {
-    font-size: 4.5rem;
-  }
   a {
     font-size: 0.8rem;
   }
 }
 @media (max-width: 450px) {
-  h1 {
-    font-size: 4rem;
-  }
   a {
     font-size: 0.7rem;
   }
