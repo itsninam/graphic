@@ -16,11 +16,6 @@ a {
   transition: 0.3s;
   font-family: $primaryFont;
   font-size: 0.8rem;
-
-  &:hover,
-  &:focus {
-    color: #023e7d;
-  }
 }
 
 ul {

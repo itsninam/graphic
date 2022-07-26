@@ -332,9 +332,6 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
 }
-a:hover, a:focus {
-  color: #023e7d;
-}
 
 ul {
   display: -webkit-box;
@@ -354,7 +351,8 @@ section {
 
 header {
   background-color: #212529;
-  min-height: 90vh;
+  min-height: 100vh;
+  height: auto;
   background-image: url("../../../../assets/grey.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -384,16 +382,38 @@ header .headerNav {
   margin: 0 auto;
   padding-bottom: 10px;
 }
+header .headerNav a:hover, header .headerNav a:focus {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
+}
 header .subHeading {
-  margin-top: 25vh;
+  text-align: center;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header .subHeading .accentWord {
+  color: #212529;
+  background-color: rgba(222, 216, 216, 0.2);
+  background-color: rgba(246, 239, 239, 0.272);
+  display: inline-block;
+  padding: 0 5px;
 }
 header .subHeading h2 {
   letter-spacing: -1px;
   font-size: 2.8rem;
   font-family: "Jost", sans-serif;
-}
-header .socialsNav {
-  margin-top: 20vh;
 }
 
 .videoGallery {
@@ -480,8 +500,10 @@ h3 {
 }
 
 .socialsNav {
-  width: 70%;
+  width: 20%;
+  min-width: 250px;
   margin: 0 auto;
+  padding-top: 60px;
 }
 .socialsNav li {
   display: -webkit-box;
@@ -497,6 +519,13 @@ h3 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.socialsNav li:hover {
+  border: 2px solid #0d1070;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 .socialsNav a {
   font-size: 1rem;
@@ -512,9 +541,17 @@ h3 {
           align-items: center;
   text-align: center;
   vertical-align: middle;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .socialsNav a i {
   padding-left: 3px;
+}
+
+.socialsItem:hover .socialsIcon {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #0d1070;
 }
 
 @media (max-width: 650px) {
@@ -524,12 +561,11 @@ h3 {
   header .headerNav {
     width: 100%;
   }
-  header .subHeading h2 {
-    font-size: 2rem;
+  header .subHeading {
+    height: 60vh;
   }
-  header .socialsNav {
-    margin-top: 13vh;
-    width: 100%;
+  header .subHeading h2 {
+    font-size: 2.3rem;
   }
 }
 @media (max-width: 450px) {
