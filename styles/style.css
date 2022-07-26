@@ -393,8 +393,7 @@ header .subHeading h2 {
   font-family: "Jost", sans-serif;
 }
 header .socialsNav {
-  margin-top: 13vh;
-  width: 100%;
+  margin-top: 20vh;
 }
 
 .videoGallery {
@@ -528,6 +527,10 @@ h3 {
   }
   header .subHeading h2 {
     font-size: 2rem;
+  }
+  header .socialsNav {
+    margin-top: 13vh;
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
