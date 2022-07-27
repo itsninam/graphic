@@ -30,7 +30,7 @@ header {
 
       &:hover,
       &:focus {
-        border-bottom: 2px solid #fff;
+        border-bottom: 1px solid #fff;
         padding-bottom: 2px;
       }
     }
@@ -39,7 +39,7 @@ header {
 
   .subHeading {
     text-align: center;
-    height: 65vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;

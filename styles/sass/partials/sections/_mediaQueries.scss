@@ -1,4 +1,28 @@
+@media (max-width: 1025px) {
+
+  //about section
+  .about {
+    .aboutContainer {
+      flex-direction: column;
+
+      .imgContainer {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .textContainer {
+        width: 100%;
+        text-align: center;
+        font-size: 0.8rem;
+      }
+
+
+    }
+  }
+}
+
 @media (max-width: 650px) {
+
   a {
     font-size: 0.8rem;
   }

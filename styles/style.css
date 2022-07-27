@@ -304,11 +304,11 @@ h1 {
 }
 
 h2 {
-  margin-top: 30px;
-  font-family: "Roboto", sans-serif;
+  font-size: 5.5rem;
+  font-family: "Blinker", sans-serif;
   color: #fff;
-  text-align: center;
   line-height: 50px;
+  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -346,7 +346,7 @@ ul {
 }
 
 section {
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 header {
@@ -383,12 +383,12 @@ header .headerNav {
   padding-bottom: 10px;
 }
 header .headerNav a:hover, header .headerNav a:focus {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   padding-bottom: 2px;
 }
 header .subHeading {
   text-align: center;
-  height: 65vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,8 +416,71 @@ header .subHeading h2 {
   font-family: "Jost", sans-serif;
 }
 
+.about {
+  padding-top: 0;
+  position: relative;
+  background-color: #000;
+}
+.about .videoOverlay {
+  position: relative;
+  padding: 25px;
+}
+.about .videoOverlay .videoContainer {
+  width: 100%;
+  display: block;
+}
+.about .videoOverlay:before {
+  content: "";
+  position: absolute;
+  opacity: 0.8;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+}
+.about h2 {
+  text-align: center;
+  position: absolute;
+  top: 20vh;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: 20;
+}
+.about .aboutContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 50vh;
+}
+.about .textContainer {
+  width: 40%;
+  color: #fff;
+  position: relative;
+  top: -100px;
+}
+.about .imgContainer {
+  width: 50%;
+  margin-right: 30px;
+}
+.about .imgContainer img {
+  border-radius: 5px;
+}
+
 .videoGallery {
   position: relative;
+  background-color: #000000;
 }
 
 .slider {
@@ -554,6 +617,23 @@ h3 {
   color: #0d1070;
 }
 
+@media (max-width: 1025px) {
+  .about .aboutContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .aboutContainer .imgContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about .aboutContainer .textContainer {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
 @media (max-width: 650px) {
   a {
     font-size: 0.8rem;

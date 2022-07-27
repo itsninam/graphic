@@ -1,0 +1,63 @@
+.about {
+  padding-top: 0;
+  position: relative;
+  background-color: #000;
+
+  .videoOverlay {
+    position: relative;
+    padding: 25px;
+  }
+
+  .videoOverlay .videoContainer {
+    width: 100%;
+    display: block;
+  }
+
+  .videoOverlay:before {
+    content: '';
+    position: absolute;
+    opacity: 0.8;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(1px)
+  }
+
+  h2 {
+    text-align: center;
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 20;
+  }
+
+  .aboutContainer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 50vh;
+  }
+
+  .textContainer {
+    width: 40%;
+    color: #fff;
+    position: relative;
+    top: -100px;
+  }
+
+  .imgContainer {
+    width: 50%;
+    margin-right: 30px;
+
+    img {
+      border-radius: 5px;
+    }
+  }
+}
