@@ -1,23 +1,37 @@
-.contactPage {
-  height: 50vh;
-  // display: flex;
-  justify-content: center;
-  align-items: center;
+footer {
+  height: 60vh;
+  background-image: url('../../../../assets/image2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 
-  h2 {
-    color: #000;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+  }
+
+  .socialsNav {
+    width: 50%;
+
+    li {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #fff;
+    }
+
+    a {
+      font-size: 2rem;
+      color: #fff;
+
+      //TO DO: icon hover
+    }
   }
 }
 
-.socialsNav {
-  li {
-    border: 2px solid #000;
-  }
 
-  a {
-    color: #000;
-  }
-}
 
 .socialsItem:hover .socialsIcon {
   transform: scale(1.2);
