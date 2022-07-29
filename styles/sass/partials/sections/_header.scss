@@ -59,4 +59,15 @@ header {
       font-family: $secondaryFont;
     }
   }
+
+  .socialsNav {
+
+    li {
+      border: 2px solid #fff;
+    }
+
+    a {
+      color: #fff;
+    }
+  }
 }

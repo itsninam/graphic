@@ -345,8 +345,58 @@ ul {
           align-items: center;
 }
 
-section {
+section,
+footer {
   padding: 50px 0;
+}
+
+.socialsNav {
+  width: 20%;
+  min-width: 250px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.socialsNav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #000;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.socialsNav li:hover {
+  border: 2px solid #0d1070;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.socialsNav a {
+  font-size: 1rem;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.socialsNav a i {
+  padding-left: 3px;
 }
 
 header {
@@ -415,6 +465,12 @@ header .subHeading h2 {
   font-size: 2.8rem;
   font-family: "Jost", sans-serif;
 }
+header .socialsNav li {
+  border: 2px solid #fff;
+}
+header .socialsNav a {
+  color: #fff;
+}
 
 .about {
   padding-top: 0;
@@ -426,7 +482,8 @@ header .subHeading h2 {
   padding: 25px;
 }
 .about .videoOverlay .videoContainer {
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
   display: block;
 }
 .about .videoOverlay:before {
@@ -451,39 +508,11 @@ header .subHeading h2 {
           transform: translate(-50%, 0);
   z-index: 20;
 }
-.about .aboutContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  margin-top: 50vh;
-}
 .about .textContainer {
-  width: 40%;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
   color: #fff;
-  position: relative;
-  top: -100px;
-}
-.about .imgContainer {
-  width: 50%;
-  margin-right: 30px;
-}
-.about .imgContainer img {
-  border-radius: 5px;
-  -webkit-transition: 0.9s;
-  transition: 0.9s;
-}
-.about .imgContainer img:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-box-shadow: 5px 5px 15px 5px #000000;
-  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .videoGallery {
@@ -559,64 +588,22 @@ h3 {
 
 .contactPage {
   height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.contactPage h2 {
+  color: #000;
 }
 
-.socialsNav {
-  width: 20%;
-  min-width: 250px;
-  margin: 0 auto;
-  padding-top: 60px;
-}
 .socialsNav li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: 2px solid #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.socialsNav li:hover {
-  border: 2px solid #0d1070;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  border: 2px solid #000;
 }
 .socialsNav a {
-  font-size: 1rem;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  vertical-align: middle;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.socialsNav a i {
-  padding-left: 3px;
+  color: #000;
 }
 
 .socialsItem:hover .socialsIcon {
@@ -626,20 +613,14 @@ h3 {
 }
 
 @media (max-width: 1025px) {
-  .about .aboutContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .about h2 {
+    top: 15vh;
   }
-  .about .aboutContainer .imgContainer {
+  .about .videoOverlay .videoContainer {
     width: 100%;
-    margin-bottom: 20px;
   }
-  .about .aboutContainer .textContainer {
+  .about .textContainer {
     width: 100%;
-    text-align: center;
-    font-size: 0.8rem;
   }
 }
 @media (max-width: 650px) {
@@ -659,5 +640,11 @@ h3 {
 @media (max-width: 450px) {
   a {
     font-size: 0.7rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 0.6rem;
   }
 }

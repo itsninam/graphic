@@ -2,21 +2,17 @@
 
   //about section
   .about {
-    .aboutContainer {
-      flex-direction: column;
 
-      .imgContainer {
-        width: 100%;
-        margin-bottom: 20px;
-      }
+    h2 {
+      top: 15vh;
+    }
 
-      .textContainer {
-        width: 100%;
-        text-align: center;
-        font-size: 0.8rem;
-      }
+    .videoOverlay .videoContainer {
+      width: 100%;
+    }
 
-
+    .textContainer {
+      width: 100%;
     }
   }
 }
@@ -47,4 +43,13 @@
   a {
     font-size: 0.7rem;
   }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 0.6rem;
+  }
+
 }

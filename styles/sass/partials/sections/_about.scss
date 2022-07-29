@@ -9,7 +9,8 @@
   }
 
   .videoOverlay .videoContainer {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
     display: block;
   }
 
@@ -35,38 +36,10 @@
     z-index: 20;
   }
 
-  .aboutContainer {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin-top: 50vh;
-  }
-
   .textContainer {
-    width: 40%;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
     color: #fff;
-    position: relative;
-    top: -100px;
-  }
-
-  .imgContainer {
-    width: 50%;
-    margin-right: 30px;
-
-
-    img {
-      border-radius: 5px;
-      transition: 0.9s;
-
-      &:hover {
-        transform: scale(1.05);
-        -webkit-box-shadow: 5px 5px 15px 5px #000000;
-        box-shadow: 5px 5px 15px 5px #000000;
-      }
-
-    }
   }
 }

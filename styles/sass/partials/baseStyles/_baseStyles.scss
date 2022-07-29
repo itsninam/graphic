@@ -24,6 +24,47 @@ ul {
   align-items: center;
 }
 
-section {
+section,
+footer {
   padding: 50px 0;
+}
+
+.socialsNav {
+  width: 20%;
+  min-width: 250px;
+  margin: 0 auto;
+  padding-top: 60px;
+
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+      border: 2px solid $accentColour;
+      transform: scale(1.2);
+    }
+  }
+
+  a {
+    font-size: 1rem;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    transition: 0.3s;
+
+
+    i {
+      padding-left: 3px;
+    }
+
+  }
 }
