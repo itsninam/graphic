@@ -45,6 +45,9 @@ app.imageGallery = () => {
 
 app.init = () => {
   app.imageGallery();
+  // setTimeout(function () {
+  //   AOS.init();
+  // }, 1000);
 };
 
 app.init();

@@ -1,7 +1,7 @@
 .about {
   padding-top: 0;
   position: relative;
-  background-color: #000;
+  background-color: $backgroundColour;
 
   .videoOverlay {
     position: relative;
@@ -17,8 +17,8 @@
   .videoOverlay:before {
     content: '';
     position: absolute;
-    opacity: 0.8;
-    background: rgba(0, 0, 0, 0.8);
+    opacity: 0.7;
+    background: $backgroundColour;
     border-radius: 5px;
     top: 0;
     right: 0;

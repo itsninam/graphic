@@ -400,7 +400,7 @@ footer {
 }
 
 header {
-  background-color: #212529;
+  background-color: #0b090a;
   min-height: 100vh;
   height: auto;
   background-image: url("../../../../assets/grey.jpg");
@@ -475,7 +475,7 @@ header .socialsNav a {
 .about {
   padding-top: 0;
   position: relative;
-  background-color: #000;
+  background-color: #0b090a;
 }
 .about .videoOverlay {
   position: relative;
@@ -489,8 +489,8 @@ header .socialsNav a {
 .about .videoOverlay:before {
   content: "";
   position: absolute;
-  opacity: 0.8;
-  background: rgba(0, 0, 0, 0.8);
+  opacity: 0.7;
+  background: #0b090a;
   border-radius: 5px;
   top: 0;
   right: 0;
@@ -646,5 +646,6 @@ h3 {
   }
   p {
     font-size: 0.6rem;
+    letter-spacing: 1.4px;
   }
 }
