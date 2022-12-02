@@ -734,7 +734,11 @@ footer .socialsNav a {
     font-size: 0.6rem;
     letter-spacing: 1.4px;
   }
-  .videoGallery iframe {
-    border: 2px solid green;
+  .videoGallery iframe,
+.videoGallery .slide {
+    width: 1px;
+    min-width: 100%;
+    *width: 100%;
+    overflow: auto;
   }
 }

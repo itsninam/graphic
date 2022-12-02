@@ -98,10 +98,15 @@
 
     // overflow: hidden;
 
-    iframe {
 
-      border: 2px solid green;
+
+    iframe,
+    .slide {
+      width: 1px;
+      min-width: 100%;
+      *width: 100%;
+      overflow: auto;
     }
-  }
 
+  }
 }
