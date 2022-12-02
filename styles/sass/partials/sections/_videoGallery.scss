@@ -1,16 +1,19 @@
 .videoGallery {
   position: relative;
-  background-color: #000000;
+  background-image: url('../../../../assets/smoke.jpg');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
 
 .slider {
-  width: 100%;
-  width: 100%;
+  width: 60%;
+  width: 60%;
   height: 500px;
   position: relative;
-
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .slide {
@@ -29,9 +32,9 @@
 
 .btn {
   position: absolute;
-  width: 45px;
-  height: 45px;
-  padding: 10px;
+  width: 30px;
+  height: 30px;
+  // padding: 2px;
   border: none;
   border-radius: 50%;
   z-index: 10px;
@@ -49,12 +52,12 @@
 }
 
 .btnPrev {
-  top: 45%;
+  top: 55%;
   left: 13%;
 }
 
 .btnNext {
-  top: 45%;
+  top: 55%;
   right: 15%;
 }
 
