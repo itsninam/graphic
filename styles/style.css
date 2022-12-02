@@ -737,4 +737,7 @@ footer .socialsNav a {
   .videoGallery {
     overflow: hidden;
   }
+  .videoGallery iframe {
+    width: 100%;
+  }
 }

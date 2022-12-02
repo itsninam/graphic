@@ -96,5 +96,9 @@
 
   .videoGallery {
     overflow: hidden;
+
+    iframe {
+      width: 100%;
+    }
   }
 }
