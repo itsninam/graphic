@@ -735,13 +735,6 @@ footer .socialsNav a {
     letter-spacing: 1.4px;
   }
   .videoGallery iframe {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
     border: 2px solid green;
   }
 }
