@@ -44,7 +44,7 @@ app.imageGallery = () => {
 };
 
 app.init = () => {
-  // app.imageGallery();
+  app.imageGallery();
 };
 
 app.init();
