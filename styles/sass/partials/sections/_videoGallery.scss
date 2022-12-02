@@ -32,16 +32,11 @@
 
 .btn {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  // padding: 2px;
-  border: none;
+  max-width: 30px;
+  max-height: 30px;
   border-radius: 50%;
   z-index: 10px;
   cursor: pointer;
-  background: none;
-  background-color: #fff;
-  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,6 +54,13 @@
 .btnNext {
   top: 55%;
   right: 15%;
+}
+
+.fa-solid {
+  color: black !important;
+  background-color: white;
+  font-size: 2rem;
+  border-radius: 50%;
 }
 
 h3 {
